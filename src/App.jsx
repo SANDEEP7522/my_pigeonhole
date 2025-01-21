@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import Navbar from './components/NaveBar/Navbar';
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
+import Skills from './components/Skills/Skill';
 function App() {
 
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Skills />
     </div>
   );
 }
