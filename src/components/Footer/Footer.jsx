@@ -16,8 +16,9 @@ export default function Footer() {
           ✨ Always driven by a love for coding and a cup of coffee ☕, I’m
           constantly evolving to stay ahead in the tech world.
         </p>{" "}
-        <p>
-          {" "}
+        <p
+        className="hover:text-blue-300"
+        >  
           🙏 Thank you for visiting my portfolio. Your support motivates me to
           continue exploring new horizons and pushing the limits of innovation.{" "}
         </p>
