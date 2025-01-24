@@ -13,15 +13,15 @@ export default function Navbar() {
                      <li>
                          <a className="text-sm sm:text-base px-2 lg:px-5 
                                        py-2 transition rounded hover:text-white 
-                                       hover:bg-emerald-600"
-                            href="#about">
+                                       hover:bg-gray-500"
+                            href="#hero">
                          Home
                          </a>
                      </li>
                      <li>
                          <a className="text-sm sm:text-base px-2 lg:px-5 
                                        py-2 transition rounded hover:text-white 
-                                       hover:bg-emerald-600"
+                                       hover:bg-gray-500"
                             href="#about">
                          About
                          </a>
@@ -29,7 +29,7 @@ export default function Navbar() {
                      <li>
                          <a className="text-sm sm:text-base px-2 lg:px-5 py-2 
                                        transition rounded hover:text-white 
-                                       hover:bg-emerald-600"
+                                       hover:bg-gray-500"
                              href="#skills">
                              Skills
                          </a>
@@ -37,7 +37,7 @@ export default function Navbar() {
                      <li>
                          <a className="text-sm sm:text-base px-2 lg:px-5 py-2 
                                        transition rounded hover:text-white 
-                                       hover:bg-emerald-600"
+                                       hover:bg-gray-500"
                              href="#projects">
                              Projects
                          </a>
@@ -45,7 +45,7 @@ export default function Navbar() {
                      <li>
                          <a className="text-sm sm:text-base px-2 lg:px-5 py-2 
                                        transition rounded hover:text-white 
-                                       hover:bg-emerald-600"
+                                       hover:bg-gray-500"
                              href="#contact">
                              Contact
                          </a>
