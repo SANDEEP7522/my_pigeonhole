@@ -1,26 +1,130 @@
+import {
+  FaCss3Alt,
+  FaDatabase,
+  FaGit,
+  FaGithub,
+  FaHtml5,
+  FaJs,
+  FaNodeJs,
+  FaReact,
+  FaPaintBrush,
+} from "react-icons/fa";
+import { Hint } from "../NaveBar/Hint";
+import { Button } from "../ui/button";
 
 export default function Skills() {
-     const skills = ["HTML", "CSS", "Javascript", "React", "NodeJs", "DataBases", "Express", "MongoDB", "TailwindCSS", 'Git', "GitHub", "AWS" ];
-     return (
-         <section id="skills"
-             className="px-10 w-full my-40 max-w-5xl mx-auto">
-             <h2 className="text-center text-6xl text-gray-700 font-bold">
-                 My Skills...
-             </h2>
-             <div className="mt-10 flex gap-5 justify-center 
-                             flex-wrap mx-auto max-w-xl">
-                 {skills.map((skill, index) => {
-                     return (
-                         <div key={index}
-                              className="cursor-pointer px-12 py-10 
-                                         rounded bg-gray-500 text-lg 
-                                         flex items-center justify-center 
-                                         font-bold hover:shadow-xl">
-                             {skill}
-                         </div>
-                     )})}
-             </div>
-         </section>
-     )
- }
- 
+  return (
+    <section id="skills" className="mt-10 text-center">
+      <h2 className="text-6xl text-gray-700 font-bold">My Tech Stack...</h2>
+
+      {/* Grid for skill items */}
+      <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-14 mx-auto max-w-2xl shadow-xl ">
+        <div className="flex flex-col items-center  ">
+          <Hint label="HTML5">
+            <Button>
+              <FaHtml5
+                color="#E34F26"
+                size={50}
+                className="hover:bg-blue-500 text-gray-500"
+              />
+            </Button>
+          </Hint>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <Hint label="CSS3">
+            <Button>
+              <FaCss3Alt
+                size={50}
+                color="#1572B6"
+                className="hover:bg-blue-500 text-gray-500"
+              />
+            </Button>
+          </Hint>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <Hint label="JavaScript">
+            <Button>
+              <FaJs
+                size={50}
+                color="#F7DF1E"
+                className="hover:bg-blue-500 text-gray-500"
+              />
+            </Button>
+          </Hint>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <Hint label="HTReactJSML5">
+            <Button>
+              <FaReact
+                size={50}
+                color="#61DAFB"
+                className="hover:bg-blue-500 text-gray-500"
+              />
+            </Button>
+          </Hint>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <Hint label="Node.js">
+            <Button>
+              <FaNodeJs
+                size={50}
+                color="#68A063"
+                className="hover:bg-blue-500 text-gray-500"
+              />
+            </Button>
+          </Hint>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <Hint label="SQL / MongoDB">
+            <Button>
+              <FaDatabase
+                size={50}
+                color="#4DB33D"
+                className="hover:bg-blue-500 text-gray-500"
+              />
+            </Button>
+          </Hint>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <Hint label="Git">
+            <Button>
+              <FaGit
+                size={50}
+                color="orange"
+                className="hover:bg-blue-500 text-gray-500"
+              />
+            </Button>
+          </Hint>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <Hint label="GitHub">
+            <Button>
+              <FaGithub
+                color="#fff"
+                className="hover:bg-blue-500 text-gray-500"
+              />
+            </Button>
+          </Hint>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <Hint label="ui/Ux">
+            <Button>
+              <FaPaintBrush
+                color="#fff"
+                className="hover:bg-blue-500 text-gray-500"
+              />
+            </Button>
+          </Hint>
+        </div>
+      </div>
+    </section>
+  );
+}
