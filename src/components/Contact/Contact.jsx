@@ -1,3 +1,5 @@
+import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+
 export default function Contact() {
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -41,22 +43,37 @@ export default function Contact() {
           <ul className="space-y-4">
             <li>
               <a
-                href=""
+                href="https://www.instagram.com/sandeep11.2__143__/?hl=en"
                 target="_blank"
                 rel="noreferrer"
                 className="text-lg text-gray-800 hover:underline"
               >
-                Instagram: <span className="font-bold">Instagram</span>
+                <FaInstagram className="inline-block" /> {"  "}
+                <span className="font-bold">Instagram</span>
               </a>
             </li>
             <li>
               <a
-                href=""
+                href="https://www.linkedin.com/in/sandeep-kumar-sahu-ab9a73303/"
                 target="_blank"
                 rel="noreferrer"
                 className="text-lg text-gray-800 hover:underline"
               >
-                Twitter: <span className="font-bold">twitter</span>
+                <FaLinkedin className="inline-block" />
+                {"  "}
+                <span className="font-bold">Linkedin</span>
+              </a>
+            </li>
+            <li>
+              <FaWhatsapp className="inline-block" />
+              <a
+                href="https://wa.me/7522814847"
+                target="_blank"
+                rel="noreferrer"
+                className="text-lg text-gray-800 hover:underline"
+              >
+                {"  "}
+                <span className="font-bold">Chat Now</span>
               </a>
             </li>
           </ul>

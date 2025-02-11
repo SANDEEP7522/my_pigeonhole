@@ -114,7 +114,7 @@ export default function Skills() {
           </Hint>
         </div>
 
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center mb-8">
           <Hint label="ui/Ux">
             <Button>
               <FaPaintBrush

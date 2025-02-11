@@ -4,30 +4,33 @@ export default function Hero() {
     <section
       id="hero"
       className="px-10 w-full flex gap-12 flex-col lg:flex-row 
-            justify-center items-center align-center mt-[25rem] 
+            justify-center items-center align-center mt-[5rem] 
             mb-16 lg:mt-13 max-w-5xl mx-auto lg:gap-0 h-[80vh] custom-margin"
     >
       <div className="flex-1 flex flex-col justify-center items-center gap-5">
         <div>
           <h4 className="text-center text-xl font-bold">Hi and welcome to</h4>
-          <h2 className="text-center text-blue-500 text-5xl font-bold">
-            sandeep Portfolio Website
+          <h2 className="text-center text-blue-500 text-5xl font-bold hover:text-rose-500">
+            Sandeep Portfolio Website
           </h2>
           <h3 className="text-center text-4xl font-bold text-white">
             {" "}
-            Here a Geek Developer
+            <marquee direction="right" behavior="alternate" scrollamount="10">
+              Here a Geek Developer
+            </marquee>
           </h3>
         </div>
 
         <p className="text-center">
-          your friendly neighbourhood developer... 👨‍💻 Passionate about building <b>
-          dynamic and scalable web applications, </b> I specialize in creating
-          seamless user experiences and robust backend solutions. Skilled in
-         <b> JavaScript, React, Node.js, and MongoDB,</b> I bring designs to life and
-          ensure efficient functionality. 🚀 With a knack for problem-solving
-          and an eye for detail, I thrive in fast-paced environments, delivering
-          clean, maintainable code. 🌐 Let’s connect to turn ideas into reality!
-          💻✨
+          your friendly neighbourhood developer... 👨‍💻 Passionate about building{" "}
+          <b>dynamic and scalable web applications, </b> I specialize in
+          creating seamless user experiences and robust backend solutions.
+          Skilled in
+          <b> JavaScript, React, Node.js, and MongoDB,</b> I bring designs to
+          life and ensure efficient functionality. 🚀 With a knack for
+          problem-solving and an eye for detail, I thrive in fast-paced
+          environments, delivering clean, maintainable code. 🌐 Let’s connect to
+          turn ideas into reality! 💻✨
         </p>
       </div>
       <div className="flex-1 ">
