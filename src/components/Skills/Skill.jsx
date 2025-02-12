@@ -11,12 +11,23 @@ import {
 } from "react-icons/fa";
 import { Hint } from "../NaveBar/Hint";
 import { Button } from "../ui/button";
+import { motion } from "framer-motion";
 
 export default function Skills() {
   return (
     <section id="skills" className="mt-10 text-center">
-      <h2 className="text-6xl text-gray-700 font-bold">My Tech Stack...</h2>
-
+       <motion.h2
+      className="text-center text-4xl sm:text-5xl md:text-6xl 
+                 font-extrabold text-gray-700 drop-shadow-lg 
+                 tracking-wide uppercase border-b-4 border-gray-500 
+                 inline-block px-6 py-2 rounded-lg"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ duration: 1 }}
+    >
+      🚀 My Tech Stack...
+    </motion.h2>
       {/* Grid for skill items */}
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-14 mx-auto max-w-2xl shadow-xl ">
         <div className="flex flex-col items-center  ">

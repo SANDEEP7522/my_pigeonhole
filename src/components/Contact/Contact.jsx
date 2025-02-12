@@ -1,4 +1,5 @@
 import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   const handleSubmit = async (event) => {
@@ -32,9 +33,18 @@ export default function Contact() {
 
   return (
     <section id="contact" className="my-40 max-w-5xl mx-auto p-6">
-      <h2 className="text-5xl font-bold text-gray-700 text-center mb-12">
-        Contact
-      </h2>
+        <motion.h2
+            className="text-center text-4xl sm:text-5xl md:text-5xl 
+             font-extrabold text-gray-700 drop-shadow-lg w-full
+             tracking-wide uppercase border-b-4 border-gray-500 
+             inline-block px-6 py-2 rounded-lg 
+             transition-all duration-300 hover:scale-105"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1.5 }}
+          >
+            🚀 Contect me 🔥
+          </motion.h2>
       <div className="flex flex-col lg:flex-row gap-10">
         <div className="flex-1 bg-none p-6 rounded-lg shadow-xl">
           <h3 className="text-3xl font-semibold text-gray-700 mb-6">
